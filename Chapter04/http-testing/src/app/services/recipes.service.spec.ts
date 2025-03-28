@@ -1,9 +1,5 @@
 import { TestBed, fakeAsync, tick } from '@angular/core/testing';
-import {
-  HttpClientTestingModule,
-  HttpTestingController,
-  provideHttpClientTesting,
-} from '@angular/common/http/testing';
+import { HttpTestingController, provideHttpClientTesting } from '@angular/common/http/testing';
 import { TestScheduler } from 'rxjs/testing';
 import { RecipesService } from './recipes.service';
 import { firstValueFrom, of } from 'rxjs';
