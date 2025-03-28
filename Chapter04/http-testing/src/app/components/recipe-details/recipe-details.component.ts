@@ -7,11 +7,10 @@ import { RecipesService } from '../../services/recipes.service';
 import { Recipe, RecipeDetails } from '../../types/recipes.type';
 
 @Component({
-  selector: 'app-recipe-details',
-  standalone: true,
-  imports: [MatCardModule, MatChipsModule, JsonPipe, CommonModule],
-  templateUrl: './recipe-details.component.html',
-  styleUrl: './recipe-details.component.scss'
+    selector: 'app-recipe-details',
+    imports: [MatCardModule, MatChipsModule, JsonPipe, CommonModule],
+    templateUrl: './recipe-details.component.html',
+    styleUrl: './recipe-details.component.scss'
 })
 export class RecipeDetailsComponent implements OnInit {
   private id = '';
