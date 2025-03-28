@@ -1,14 +1,11 @@
-/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
-  "extends": "./tsconfig.json",
-  "compilerOptions": {
-    "outDir": "./out-tsc/spec",
-    "types": [
-      "jasmine"
-    ]
-  },
-  "include": [
-    "src/**/*.spec.ts",
-    "src/**/*.d.ts"
-  ]
-}
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+      "emitDecoratorMetadata": true,
+      "outDir": "./build/spec",
+      "esModuleInterop": true,
+      "module": "CommonJs",
+      "types": ["jest", "@types/testing-library__jest-dom"]
+    },
+    "include": ["src/**/*.spec.ts", "src/**/*.d.ts"]
+  }
