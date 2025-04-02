@@ -82,17 +82,19 @@ By the end of this book, you’ll have mastered reactive programming principles,
 
 <details open> 
   <summary><h2>Requirements for this book</summary>
-  ### Software and Hardware List
+     
+  ## Software and Hardware List
+     
 | Chapter  | Software required                                                                    | OS required                        |
 | -------- | -------------------------------------------------------------------------------------| -----------------------------------|
 |1-10|RxJS |v7 Windows, macOS, or Linux|
-|1-10|Angular v19+||v7 Windows, macOS, or Linux|
-|1-10|Node.js v22+||v7 Windows, macOS, or Linux|
-|1-10|npm v11+||v7 Windows, macOS, or Linux|
-|1-10|pnpm v10+||v7 Windows, macOS, or Linux|
-|1-10|Jest v29+||v7 Windows, macOS, or Linux|
-|1-10|MSW v2+||v7 Windows, macOS, or Linux|
-|1-10|NestJS v||v7 Windows, macOS, or Linux|
+|1-10|Angular v19+|v7 Windows, macOS, or Linux|
+|1-10|Node.js v22+|v7 Windows, macOS, or Linux|
+|1-10|npm v11+|v7 Windows, macOS, or Linux|
+|1-10|pnpm v10+|v7 Windows, macOS, or Linux|
+|1-10|Jest v29+|v7 Windows, macOS, or Linux|
+|1-10|MSW v2+|v7 Windows, macOS, or Linux|
+|1-10|NestJS v|v7 Windows, macOS, or Linux|
     
 ## Instructions and Navigations
 All of the code is organized into folders.
