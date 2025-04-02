@@ -82,15 +82,33 @@ By the end of this book, you’ll have mastered reactive programming principles,
 
 <details open> 
   <summary><h2>Requirements for this book</summary>
-To be filled
-  </details>
+  ### Software and Hardware List
+| Chapter  | Software required                                                                    | OS required                        |
+| -------- | -------------------------------------------------------------------------------------| -----------------------------------|
+|1-10|RxJS |v7 Windows, macOS, or Linux|
+|1-10|Angular v19+||v7 Windows, macOS, or Linux|
+|1-10|Node.js v22+||v7 Windows, macOS, or Linux|
+|1-10|npm v11+||v7 Windows, macOS, or Linux|
+|1-10|pnpm v10+||v7 Windows, macOS, or Linux|
+|1-10|Jest v29+||v7 Windows, macOS, or Linux|
+|1-10|MSW v2+||v7 Windows, macOS, or Linux|
+|1-10|NestJS v||v7 Windows, macOS, or Linux|
     
+## Instructions and Navigations
+All of the code is organized into folders.
 
+The code will look like the following:
+```
+combineLatest({
+    searchName: searchNameInputValue$,
+    searchIngredient: searchIngredientInputValue$
+}
+```
 
 <details> 
-  <summary><h2>Get to know Authors</h2></summary>
+  <summary><h2>Get to know Author</h2></summary>
 
-_Nikola Mitrović _ Nikola Mitrović is a seasoned software engineer and consultant with experience that spans nearly a decade, with technical expertise in micro-frontend architecture and web performance, as well as technologies such as Angular, React, Next.js, Node.js, NestJS, NX, and AWS. He is an enthusiastic public speaker and has presented at some of the world's largest tech conferences, sharing his passion for crafting exceptional web experiences. He has business domain expertise in EdTech, HealthTech, and Digital Identity.
+**Nikola Mitrović** is a seasoned software engineer and consultant with experience that spans nearly a decade, with technical expertise in micro-frontend architecture and web performance, as well as technologies such as Angular, React, Next.js, Node.js, NestJS, NX, and AWS. He is an enthusiastic public speaker and has presented at some of the world's largest tech conferences, sharing his passion for crafting exceptional web experiences. He has business domain expertise in EdTech, HealthTech, and Digital Identity.
 For the last couple of years, Nikola has been in leadership roles, inspiring a culture of technical excellence, continuous learning, collaboration, and psychological safety within the organization. He strongly believes in leading with empathy, honesty, and passion, empowering teams with trust and autonomy. 
 Prior to this, Nikola was a partner, technical architect, and development lead at Vega IT, where he was recognized as the company's MVP for three consecutive years (2022-2024).
 
