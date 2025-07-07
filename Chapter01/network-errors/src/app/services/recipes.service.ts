@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { NEVER, Observable, Subject, catchError, defer, of, repeat, retry, share, shareReplay, tap, throwError, timer } from 'rxjs';
+import { Observable, Subject, catchError, defer, retry, tap, throwError, timer } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Recipe } from '../types/recipes.type';
 
@@ -8,6 +8,9 @@ import { Recipe } from '../types/recipes.type';
   providedIn: 'root'
 })
 export class RecipesService {
+  searchRecipes$(searchName: string): any {
+    throw new Error('Method not implemented.');
+  }
 
   private state: 'CLOSED' | 'OPEN' | 'HALF_OPEN' = 'CLOSED';
   public showRetryButton$ = new Subject<boolean>();

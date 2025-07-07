@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { AsyncPipe, CommonModule } from '@angular/common';
 import { MatButton } from '@angular/material/button';
-import { Observable, Subscription } from 'rxjs';
+import { debounceTime, distinctUntilChanged, fromEvent, map, Observable, startWith, Subscription, switchMap } from 'rxjs';
 import { RecipeItemComponent } from '../recipe-item/recipe-item.component';
 import { Recipe } from '../../types/recipes.type';
 import { RecipesService } from '../../services/recipes.service';
@@ -19,6 +19,23 @@ export class RecipesListComponent {
   showRetryButton$: Observable<boolean> = this.recipesService.showRetryButton$;
 
   constructor(private recipesService: RecipesService) { }
+
+  @ViewChild('searchNameInput') 
+    searchNameInputElement!: ElementRef;
+
+  ngAfterViewInit() {
+      fromEvent<InputEvent>(
+          this.searchNameInputElement.nativeElement,'input')
+          .pipe(
+              map((searchInput: InputEvent) =>
+                  (searchInput.target as HTMLInputElement)
+                      .value),
+              startWith(''), debounceTime(500),
+              distinctUntilChanged(),
+              switchMap((searchName: string) => 
+                  this.recipesService.searchRecipes$(searchName)))
+              .subscribe((recipes) => this.recipes = recipes as Recipe[]);
+  }
 
   ngOnInit() {
     // Retry strategy
